@@ -23,26 +23,26 @@
             <TextView
                 android:id="@+id/txtTitle"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight=".20"
+                android:layout_height="52dp"
                 android:layout_gravity="center"
-                android:layout_marginRight="@dimen/title_horizontal_margin"
                 android:layout_marginLeft="@dimen/title_horizontal_margin"
+                android:layout_marginRight="@dimen/title_horizontal_margin"
                 android:layout_marginBottom="@dimen/title_vertical_margin"
-                android:textSize="@dimen/title_size"
+                android:layout_weight=".20"
+                android:gravity="center_horizontal"
                 android:text="@string/app_name"
-                android:textStyle="bold"
                 android:textColor="@color/colorBlack"
-                android:gravity="center_horizontal"/>
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:id="@+id/login_form"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"
+                android:layout_height="wrap_content"
                 android:layout_weight=".80"
                 android:orientation="vertical">
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -55,9 +55,9 @@
                         android:maxLines="1"
                         android:singleLine="true" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
-                <android.support.design.widget.TextInputLayout
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -72,7 +72,7 @@
                         android:maxLines="1"
                         android:singleLine="true" />
 
-                </android.support.design.widget.TextInputLayout>
+                </com.google.android.material.textfield.TextInputLayout>
 
                 <TextView
                     android:id="@+id/txtLoginError"
@@ -81,7 +81,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/error_vertical_margin"
                     android:textColor="@color/colorError"
-                    android:visibility="gone"/>
+                    android:visibility="gone" />
 
                 <Button
                     android:id="@+id/btnLogin"
@@ -91,15 +91,15 @@
                     android:text="@string/action_login"
                     android:textStyle="bold" />
 
-                <Button
-                    android:id="@+id/btnRegister"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:text="@string/action_register"
-                    android:textStyle="bold" />
-
             </LinearLayout>
         </LinearLayout>
     </ScrollView>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/action_register"
+        android:textStyle="bold" />
 </LinearLayout>

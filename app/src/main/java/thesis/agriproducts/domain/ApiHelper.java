@@ -1,10 +1,11 @@
 package thesis.agriproducts.domain;
 
 import android.app.ProgressDialog;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import thesis.agriproducts.util.Utils;
 

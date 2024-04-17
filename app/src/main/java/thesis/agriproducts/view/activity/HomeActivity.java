@@ -1,12 +1,15 @@
 package thesis.agriproducts.view.activity;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.design.widget.BottomNavigationView;
-import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.WindowManager;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import io.reactivex.annotations.NonNull;
 import thesis.agriproducts.R;
 import thesis.agriproducts.util.Tags;
 import thesis.agriproducts.util.Utils;

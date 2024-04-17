@@ -1,22 +1,9 @@
 package thesis.agriproducts.view.activity;
 
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import thesis.agriproducts.domain.Api;
-import thesis.agriproducts.domain.ApiHelper;
-import thesis.agriproducts.model.entities.Result;
-import thesis.agriproducts.model.entities.User;
-import thesis.agriproducts.util.*;
-
 import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
@@ -25,9 +12,23 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import thesis.agriproducts.R;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class LoginActivity extends AppCompatActivity{
+import org.jetbrains.annotations.Nullable;
+
+import io.reactivex.annotations.NonNull;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import thesis.agriproducts.R;
+import thesis.agriproducts.domain.Api;
+import thesis.agriproducts.domain.ApiHelper;
+import thesis.agriproducts.model.entities.Result;
+import thesis.agriproducts.util.SharedPrefManager;
+import thesis.agriproducts.util.Tags;
+import thesis.agriproducts.util.Utils;
+
+public class LoginActivity extends AppCompatActivity {
 
     String TAG = "Login Activity";
     EditText mEmailView, mPasswordView;

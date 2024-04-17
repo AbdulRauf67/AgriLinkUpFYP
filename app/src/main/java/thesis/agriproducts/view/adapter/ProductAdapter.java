@@ -1,18 +1,19 @@
 package thesis.agriproducts.view.adapter;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.RecyclerView;
-import android.text.SpannableString;
-import android.text.style.RelativeSizeSpan;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.squareup.picasso.Picasso;
+
 import java.util.List;
+
+import io.reactivex.annotations.NonNull;
 import thesis.agriproducts.R;
 import thesis.agriproducts.model.entities.Product;
 

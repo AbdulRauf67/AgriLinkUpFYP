@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/card_view_vertical_margin"
@@ -28,6 +29,7 @@
                 android:id="@+id/imgItemProductThumb"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:src="@drawable/logo"
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="5dp"
                 android:gravity="center_vertical"
@@ -112,6 +114,6 @@
 
             </RelativeLayout>
         </LinearLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

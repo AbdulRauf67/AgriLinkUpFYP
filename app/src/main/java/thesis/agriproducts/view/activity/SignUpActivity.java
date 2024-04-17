@@ -2,13 +2,8 @@ package thesis.agriproducts.view.activity;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager;
@@ -17,21 +12,26 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
+
 import id.zelory.compressor.Compressor;
+import io.reactivex.annotations.NonNull;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import thesis.agriproducts.R;
+import thesis.agriproducts.domain.Api;
 import thesis.agriproducts.domain.ApiHelper;
 import thesis.agriproducts.model.entities.Result;
 import thesis.agriproducts.model.entities.User;
 import thesis.agriproducts.util.Utils;
-import thesis.agriproducts.domain.Api;
 
 public class SignUpActivity extends AppCompatActivity {
 

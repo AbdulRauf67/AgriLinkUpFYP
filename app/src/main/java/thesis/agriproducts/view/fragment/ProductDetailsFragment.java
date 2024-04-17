@@ -5,11 +5,7 @@ import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,9 +14,11 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.google.android.gms.common.GooglePlayServicesNotAvailableException;
 import com.google.android.gms.common.GooglePlayServicesRepairableException;
@@ -29,9 +27,7 @@ import com.google.android.gms.location.places.ui.PlacePicker;
 import com.google.android.gms.maps.model.LatLng;
 import com.squareup.picasso.Picasso;
 
-import java.io.File;
-
-import id.zelory.compressor.Compressor;
+import io.reactivex.annotations.NonNull;
 import okhttp3.MediaType;
 import okhttp3.RequestBody;
 import retrofit2.Call;
@@ -41,7 +37,6 @@ import thesis.agriproducts.R;
 import thesis.agriproducts.domain.Api;
 import thesis.agriproducts.domain.ApiHelper;
 import thesis.agriproducts.model.CenterRepository;
-import thesis.agriproducts.model.entities.Deal;
 import thesis.agriproducts.model.entities.Product;
 import thesis.agriproducts.model.entities.Result;
 import thesis.agriproducts.model.entities.User;
